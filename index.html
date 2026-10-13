@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2d5c">
+  <meta name="description" content="Pusat akses IK-ACCESS: aplikasi web dan bot Telegram untuk mengakses Instruksi Kerja.">
+  <title>IK-ACCESS | Digital Access Center</title>
+  <style>
+    :root {
+      --navy: #0b2d5c;
+      --blue: #1459a6;
+      --sky: #eaf4ff;
+      --ink: #132238;
+      --muted: #5c6b7e;
+      --white: #ffffff;
+      --line: #dce7f3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(160deg, #eaf4ff 0%, #f7fbff 45%, #ffffff 100%);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px 16px;
+    }
+    .wrap { width: 100%; max-width: 480px; }
+    .card {
+      overflow: hidden; background: var(--white); border: 1px solid var(--line);
+      border-radius: 24px; box-shadow: 0 18px 48px rgba(11,45,92,.12);
+    }
+    .hero {
+      color: white; text-align: center; padding: 34px 24px 30px;
+      background: radial-gradient(circle at top right, #2c78c8 0%, transparent 38%),
+                  linear-gradient(135deg, #0b2d5c 0%, #1459a6 100%);
+    }
+    .mark {
+      width: 66px; height: 66px; margin: 0 auto 15px; border-radius: 19px;
+      border: 1px solid rgba(255,255,255,.45); background: rgba(255,255,255,.12);
+      display: grid; place-items: center; font-size: 27px; font-weight: 800;
+      letter-spacing: -1px;
+    }
+    h1 { margin: 0; font-size: 29px; letter-spacing: 1.5px; }
+    .full { margin: 10px auto 0; max-width: 330px; font-size: 13px; line-height: 1.55; opacity: .94; }
+    .tag { margin-top: 16px; font-weight: 700; font-size: 14px; letter-spacing: .2px; }
+    .content { padding: 25px 22px 22px; }
+    .intro { margin: 0 0 18px; color: var(--muted); text-align: center; font-size: 14px; line-height: 1.55; }
+    .access {
+      display: flex; align-items: center; gap: 14px; width: 100%;
+      padding: 16px; margin: 12px 0; text-decoration: none; color: var(--ink);
+      border: 1px solid var(--line); border-radius: 16px; background: #fff;
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .access:hover, .access:focus-visible {
+      transform: translateY(-2px); border-color: #8cb8e8;
+      box-shadow: 0 8px 20px rgba(20,89,166,.10); outline: none;
+    }
+    .icon {
+      flex: 0 0 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+      background: var(--sky); font-size: 24px;
+    }
+    .copy { flex: 1; min-width: 0; }
+    .label { display: block; color: var(--navy); font-size: 15px; font-weight: 800; }
+    .desc { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.4; }
+    .arrow { color: var(--blue); font-size: 22px; font-weight: 700; }
+    .note {
+      margin-top: 19px; padding: 12px 14px; border-radius: 12px;
+      background: #f3f8fe; color: #52657c; text-align: center; font-size: 11px; line-height: 1.5;
+    }
+    footer { padding: 0 18px 20px; text-align: center; color: #718096; font-size: 11px; }
+    @media (max-width: 360px) {
+      h1 { font-size: 25px; }
+      .content { padding: 20px 16px; }
+      .access { padding: 13px; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-label="IK-ACCESS Digital Access Center">
+      <header class="hero">
+        <div class="mark" aria-hidden="true">IK</div>
+        <h1>IK-ACCESS</h1>
+        <p class="full">Integrated Knowledge Access System for Master Work Instructions</p>
+        <div class="tag">One Master, Easy Access.</div>
+      </header>
+      <div class="content">
+        <p class="intro">Pilih jalur akses yang Anda butuhkan untuk mencari dan membuka dokumen Instruksi Kerja.</p>
+        <a class="access" href="https://ik-access.online" target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">🌐</span>
+          <span class="copy">
+            <span class="label">WEB APPLICATION</span>
+            <span class="desc">Buka aplikasi IK-ACCESS melalui browser.</span>
+          </span>
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="access" href="https://t.me/IK_Access_PLNNP_UPGRK_bot" target="_blank" rel="noopener noreferrer">
+          <span class="icon" aria-hidden="true">✈️</span>
+          <span class="copy">
+            <span class="label">TELEGRAM BOT</span>
+            <span class="desc">Cari dan akses dokumen IK melalui Telegram.</span>
+          </span>
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+        <div class="note">Gunakan akun dan akses yang sesuai dengan ketentuan internal perusahaan. Pastikan dokumen yang dibuka merupakan versi yang berlaku.</div>
+      </div>
+      <footer>IK-ACCESS · Digital Knowledge Access</footer>
+    </section>
+  </main>
+</body>
+</html>
